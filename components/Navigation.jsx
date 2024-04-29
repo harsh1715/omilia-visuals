@@ -11,11 +11,11 @@ export const Navigation = () => {
                   <h3>CLIENT GALLERY</h3>
               </li>
               <li className="flex flex-col items-center space-y-2">
-                  <h3>01</h3>
+                  <h3>03</h3>
                   <h3>BLOG</h3>
               </li>
               <li className="flex flex-col items-center space-y-2">
-                  <h3>03</h3>
+                  <h3>04</h3>
                   <h3>SERVICES</h3>
               </li>
           </ul>

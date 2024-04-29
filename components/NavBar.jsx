@@ -12,16 +12,12 @@ export const NavBar = () => {
           <Link className="hover:underline" href="#">
             CLIENT GALLERY
           </Link>
-          <Link className="hover:underline" href="#">
+          <Link className="hover:underline" href="/services">
             SERVICES
-          </Link>
-          <Link className="hover:underline" href="#">
-            BLOG
           </Link>
           <Link className="hover:underline" href="#">
             CONTACT
           </Link>
-          
         </div>
       </nav>
     </div>
