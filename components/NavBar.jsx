@@ -16,8 +16,12 @@ export const NavBar = () => {
             SERVICES
           </Link>
           <Link className="hover:underline" href="#">
+            BLOG
+          </Link>
+          <Link className="hover:underline" href="#">
             CONTACT
           </Link>
+          
         </div>
       </nav>
     </div>
