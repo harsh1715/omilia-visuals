@@ -48,8 +48,8 @@ export const Header = () => {
           <br />
           and intimate moments through lenses.
         </p>
-        <Link href="#" style={buttonStyle} className=" mr-24 mt-6">
-          <h3 style={buttonStyle}>BROWSE OUR SERVICES</h3>
+        <Link href="/services" style={buttonStyle} className=" mr-24 mt-6">
+          <h3 style={buttonStyle} >BROWSE OUR SERVICES</h3>
         </Link>
       </div>
     </header>
