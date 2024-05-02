@@ -1,49 +1,39 @@
 import React from 'react';
-import { useRouter } from 'next/router';
 
 const BlogPage = () => {
-  const router = useRouter();
-  const { id } = router.query;
-
-  // Dummy data for the blog post (replace with actual data from backend)
-  const blogPost = {
-    id: 1,
-    date: "April 30, 2024",
-    title: "Title of the First Blog Post",
-    content: `
-      <p>This is the content of the first blog post. It can contain a detailed description of the topic, including any relevant information, images, or other media.</p>
-
-      <h2>Section 1</h2>
-      <p>This is the content of the first section of the blog post. It can contain additional details, analysis, or discussion related to the topic.</p>
-      <img src="/images/bestshot.png" alt="Blog Post Image 1" class="mb-4 rounded-lg" />
-
-      <h2>Section 2</h2>
-      <p>This is the content of the second section of the blog post. It can contain additional details, analysis, or discussion related to the topic.</p>
-      <img src="/images/blogbackground.png" alt="Blog Post Image 2" class="mb-4 rounded-lg" />
-
-      <h2>Conclusion</h2>
-      <p>This is the conclusion of the blog post, summarizing the key points or providing a final thought on the topic.</p>
-    `,
-    image: "/images/blogbackground.png",
-    author: "John Doe",
-    category: "Technology"
-  };
-
   return (
-    <div className="bg-[#373633] text-[#FFFFFF] py-8">
+    <div className="bg-[#373633] text-white py-24 md:py-32 lg:py-40"> {/* Change background color here */} 
       <div className="max-w-6xl mx-auto px-10">
         <div className="blog-post">
-          <img src={blogPost.image} alt="Blog Post Image" className="max-w-full h-auto mb-8 rounded-lg" />
-          <div className="post-details">
-            <span className="post-date">{blogPost.date}</span>
-            <h1 className="post-title text-5xl font-semibold mb-4">{blogPost.title}</h1>
-            <p className="post-author mb-4">By {blogPost.author}</p>
-            <p className="post-category mb-8">Category: {blogPost.category}</p>
-            <div
-              className="post-content"
-              dangerouslySetInnerHTML={{ __html: blogPost.content }}
-            />
+          {/* Image at the top */}
+          <img src="/images/bestshot.png" alt="Blog Photo Top" width="1200" height="600" className="mb-8 rounded-lg" />
+
+          <div className="written-parts">
+            <h1 className="invitation-heading text-4xl font-semibold mb-8">
+              In the heart of spring, love blooms anew as [Couple's Names] embark on their journey to forever.
+            </h1>
+            <p className="invitation-text">
+              Join us in celebrating the union of two souls, as they exchange vows of eternal devotion on [Wedding Date]. Set against the backdrop of [Venue], a picturesque oasis of romance, this promises to be a day etched in the annals of time.
+            </p>
+            <p className="invitation-text">
+              The enchantment begins with a whimsical ceremony, where vows woven with heartfelt promises will intertwine, sealing their love amidst the gentle rustle of leaves and the tender embrace of nature. As the sun casts its golden hues upon the gathering, witness the exchange of rings, symbolizing a bond that knows no bounds.
+            </p>
+            <p className="invitation-text">
+              Following the ceremony, guests will be swept away into a world of elegance and grace as they enter the reception hall adorned with delicate blooms and twinkling lights. Indulge in a culinary journey fit for royalty, where every bite tells a story of passion and flavor, curated to tantalize the senses and leave a lasting impression.
+            </p>
+            <p className="invitation-text">
+              Raise a glass to the newlyweds as heartfelt toasts resonate through the air, celebrating not only the love shared between [Couple's Names], but also the journey that lies ahead. Dance the night away under a canopy of stars, as melodies of joy fill the air, creating an atmosphere of pure enchantment and bliss.
+            </p>
+            <p className="invitation-text">
+              As the evening draws to a close, bid farewell to the happy couple as they embark on their new chapter, hand in hand, surrounded by the love and well-wishes of their cherished friends and family. May their love continue to flourish and grow, forever and always.
+            </p>
+            <p className="invitation-text">
+              Join us in witnessing a love story unfold, as [Couple's Names] begin their happily ever after amidst the beauty and magic of their dream wedding.
+            </p>
           </div>
+
+          {/* Image at the bottom */}
+          <img src="/images/blogbackground.png" alt="Blog Photo Bottom" width="800" height="611" style={{ maxWidth: '100%' }} className="mt-8 rounded-lg" />
         </div>
       </div>
     </div>
