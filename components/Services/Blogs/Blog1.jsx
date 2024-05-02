@@ -5,7 +5,6 @@ const BlogPage = () => {
     <div className="bg-[#373633] text-white py-24 md:py-32 lg:py-40"> {/* Change background color here */} 
       <div className="max-w-6xl mx-auto px-10">
         <div className="blog-post">
-          {/* Image at the top */}
           <img src="/images/bestshot.png" alt="Blog Photo Top" width="1200" height="600" className="mb-8 rounded-lg" />
 
           <div className="written-parts">
@@ -32,12 +31,10 @@ const BlogPage = () => {
             </p>
           </div>
 
-          {/* Image at the bottom */}
           <img src="/images/blogbackground.png" alt="Blog Photo Bottom" width="800" height="611" style={{ maxWidth: '100%' }} className="mt-8 rounded-lg" />
         </div>
       </div>
     </div>
   );
 };
-
 export default BlogPage;
